@@ -4,43 +4,55 @@ import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text
+      <View
         style={{
-          fontSize: 34,
-          fontWeight: "bold",
-          fontStyle: "italic",
-          color: "#04f",
+          alignItems: "center",
+          justifyContent: "center",
+          height: 350,
+          width: "95%",
+          /*   backgroundColor: "#0005", */
+          borderRadius: 15,
         }}
       >
-        BienVenue
-      </Text>
-      <TextInput
-        style={styles.textInputStyle}
-        keyboardType="email-address"
-        placeholder="enter your email"
-        placeholderTextColor="#fff"
-      ></TextInput>
-      <TextInput
-        style={styles.textInputStyle}
-        secureTextEntry
-        placeholderTextColor="#fff"
-        placeholder="enter your password"
-      ></TextInput>
-      <View style={styles.buttonContainer}>
-        <Button title="submit"></Button>
-        <Button title="exit"></Button>
+        <Text
+          style={{
+            fontSize: 34,
+            fontWeight: "bold",
+            fontStyle: "italic",
+            color: "#04f",
+          }}
+        >
+          BienVenue
+        </Text>
+        <TextInput
+          style={styles.textInputStyle}
+          keyboardType="email-address"
+          placeholder="enter your email"
+          placeholderTextColor="#fff"
+        ></TextInput>
+        <TextInput
+          style={styles.textInputStyle}
+          secureTextEntry
+          placeholderTextColor="#fff"
+          placeholder="enter your password"
+        ></TextInput>
+        <View style={styles.buttonContainer}>
+          <Button title="submit"></Button>
+          <Button title="exit"></Button>
+        </View>
+        <Text
+          style={{
+            width: "100%",
+            textAlign: "right",
+            fontSize: 14,
+            fontWeight: "bold",
+            marginRight: 10,
+          }}
+        >
+          Create new user
+        </Text>
+        <StatusBar style="auto" />
       </View>
-      <Text
-        style={{
-          width: "100%",
-          textAlign: "right",
-          fontSize: 14,
-          fontWeight: "bold",
-        }}
-      >
-        Create new user
-      </Text>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -59,6 +71,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     borderRadius: 5,
     paddingHorizontal: 20,
+    color: "white",
   },
   buttonContainer: {
     flexDirection: "row-reverse",
