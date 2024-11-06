@@ -21,7 +21,7 @@ export default function App() {
       ></TextInput>
       <TextInput
         style={styles.textInputStyle}
-        secureTextEntry="true"
+        secureTextEntry
         placeholder="enter your password"
       ></TextInput>
       <View style={styles.buttonContainer}>
