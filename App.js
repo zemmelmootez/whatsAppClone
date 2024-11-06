@@ -18,16 +18,28 @@ export default function App() {
         style={styles.textInputStyle}
         keyboardType="email-address"
         placeholder="enter your email"
+        placeholderTextColor="#fff"
       ></TextInput>
       <TextInput
         style={styles.textInputStyle}
         secureTextEntry
+        placeholderTextColor="#fff"
         placeholder="enter your password"
       ></TextInput>
       <View style={styles.buttonContainer}>
         <Button title="submit"></Button>
         <Button title="exit"></Button>
       </View>
+      <Text
+        style={{
+          width: "100%",
+          textAlign: "right",
+          fontSize: 14,
+          fontWeight: "bold",
+        }}
+      >
+        Create new user
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -43,10 +55,15 @@ const styles = StyleSheet.create({
   textInputStyle: {
     height: 45,
     width: "95%",
-    backgroundColor: "white",
+    backgroundColor: "#00fa",
     marginTop: 10,
     borderRadius: 5,
-    backgroundColor: "red",
+    paddingHorizontal: 20,
   },
-  buttonContainer: { flex: 1 },
+  buttonContainer: {
+    flexDirection: "row-reverse",
+    padding: 20,
+    margin: 20,
+    gap: 20,
+  },
 });
